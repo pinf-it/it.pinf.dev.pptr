@@ -1,0 +1,8 @@
+[bash.origin.express] Adding route: /^\//
+Server: http://localhost:8080/
+? Press any key to exit dev server.
+ [1D[1C[1m[35mLoading URL: http://localhost:8080/index.html[39m[22m
+127.0.0.1 - "GET /index.html HTTP/1.1" 200 - "-"
+[2K[1A[2K[G? Press any key to exit dev server.
+ [1D[1C
+OK

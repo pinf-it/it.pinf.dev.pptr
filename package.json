@@ -1,0 +1,14 @@
+{
+  "name": "it.pinf.dev.pptr",
+  "version": "0.0.0",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {
+    "@pinf-it/inf": "^0.3.0-pre.1",
+    "bash.origin.test": "^0.3.0-pre.0"
+  },
+  "scripts": {
+    "test": "bash.origin.test examples"
+  }
+}

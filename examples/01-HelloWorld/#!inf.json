@@ -1,0 +1,37 @@
+#!/usr/bin/env inf
+{
+    "#": [
+        "gi0.PINF.it/core/v0"
+    ],
+
+    "#": {
+        "server": "bash.origin.express",
+        "runner": "it.pinf.dev.pptr"
+    },
+    ":server:": "server @ server/v0",
+    ":runner:": "runner @ runner/v1",
+
+    "gi0.PINF.it/build/v0 @ # onDone()": (inf () >>>
+        {
+            "gi0.PINF.it/core/v0 @ # :server: set() config": {
+                "port": 8080,
+                "routes": {
+                    "^/": "."
+                }
+            },
+
+            "gi0.PINF.it/core/v0 @ # :server: run() start": "",
+            "gi0.PINF.it/build/v0 @ # :runner: start() /index.html": {
+                "port": 8080
+            },
+
+            "gi0.PINF.it/build/v0 @ # waitForAnyKey()": "",
+
+
+            "gi0.PINF.it/build/v0 @ # :runner: stop() /index.html": "",
+            "gi0.PINF.it/core/v0 @ # :server: run() stop": "",
+
+            "gi0.PINF.it/core/v0 @ # unwatch()": ""
+        }
+    <<<)
+}

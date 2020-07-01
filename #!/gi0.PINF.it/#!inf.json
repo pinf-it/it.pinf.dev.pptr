@@ -1,0 +1,4 @@
+{
+    "runner/v0 #": "${__DIRNAME__}/tool.",
+    "runner/v1 #": "${__DIRNAME__}/tool1."
+}
